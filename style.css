@@ -132,7 +132,9 @@ body {
 }
 
 .course-card {
-    width: 250px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin:5px;
 }
 
 .course-card img {
@@ -182,4 +184,27 @@ body {
 .footer{
     background-color: black;
     color:white;
+}
+@media screen and (max-width:600px){
+    body{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:500px){
+    .course-card{
+        flex-basis: 40%;
+    }
+    .categories{
+        display:none;
+    }
+    .navbar__s2,.navbar__s3{
+        display:none;
+    }
+    
+}
+@media screen and (min-width:500px){
+    
+    .navbar__s4{
+     display:none;   
+    }
 }
